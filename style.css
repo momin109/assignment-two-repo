@@ -40,8 +40,21 @@ font-size: 16px;
 
 /*----popular callection----*/
 
+.Popular-Collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    
+}
+.collection{
+    background-color: #4e4d49;
+    align-items: center;
+    
+}
 .product-description{
     line-height: 5px;
+   
 }
 .product-title{
     font-size: 30px;
