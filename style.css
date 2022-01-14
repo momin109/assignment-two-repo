@@ -1,0 +1,35 @@
+.conteiner{
+    display: flex;
+   
+}
+.product{
+    width: 50%;
+    margin-top: 50px;
+    margin-left : 80px;
+    
+    
+}
+.product-details{
+width: 500px;
+}
+.paragraph{
+    line-height: 30px;
+}
+.title{
+    font-size: 50px;
+}
+
+.btn{
+padding: 6px 30px;
+background-color: red;
+border-radius: 5px;
+font-size: 16px;
+}
+.camera{
+    width: 50%;
+}
+.camera img{
+    width: 70%;
+   border: 1px solid rgb(184, 186, 190);
+   border-radius: 50%;
+}
