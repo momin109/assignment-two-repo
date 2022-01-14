@@ -1,3 +1,7 @@
+body{
+    background-color: darkgrey;
+}
+
 .conteiner{
     display: flex;
    
@@ -32,4 +36,25 @@ font-size: 16px;
     width: 70%;
    border: 1px solid rgb(184, 186, 190);
    border-radius: 50%;
+}
+
+/*----popular callection----*/
+
+.product-description{
+    line-height: 5px;
+}
+.product-title{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+}
+.product-rate{
+    font-size: 25px;
+}
+.fa-star{
+    color: #FFC014;
+    font-size: 12px;
+}
+.rating{
+    padding-left: 7px;
 }
