@@ -1,7 +1,11 @@
 body{
-    background-color: darkgrey;
+    background-color: rgb(250, 250, 250);
 }
-
+.main-title{
+    margin-top: 70px;
+    padding-left: 83px;
+    font-size: 25px;
+}
 .conteiner{
     display: flex;
    
@@ -24,10 +28,12 @@ width: 500px;
 }
 
 .btn{
-padding: 6px 30px;
+padding: 10px 30px;
 background-color: red;
-border-radius: 5px;
+border-radius: 20px;
 font-size: 16px;
+border: 1px solid red;
+margin-top: 15px;
 }
 .camera{
     width: 50%;
@@ -40,12 +46,17 @@ font-size: 16px;
 
 /*----popular callection----*/
 
+.collection-title{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2em;
+}
 .Popular-Collection{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
     grid-row-gap: 24px;
-    margin: 119px;
+    margin: 50px 119px;
 }
 .collection{
     background-color: white;
@@ -73,6 +84,12 @@ font-size: 16px;
 .rating{
     padding-left: 7px;
 }
+.arrow{
+    text-align: right;
+    margin-right: 119px;
+    font-size: 18px;
+    color: rgb(221, 36, 36);
+}
 
 
 /*---walmart---*/
@@ -81,12 +98,20 @@ font-size: 16px;
     display: flex;
     margin: 10%;
 }
+.title-two{
+    font-size: 35px;
+}
+.btn-two{
+    background-color: rgb(221, 72, 102);
+    padding: 10px 20px;
+    font-size: 16px;
+}
 .walmart-bannar{
     width: 50%;
 }
 
 .walmart-bannar img{
-    width: 80%;
+    width: 90%;
 }
 .Walmart-Locations{
     width: 50%;
@@ -98,4 +123,40 @@ footer{
 background-color: rgb(5, 2, 56);
 color: white;
 text-align: center;
+height: 200px;
 }
+.footer-details{
+    padding-top: 25px;
+}
+.footer-icon{
+font-size: 20px;
+}
+
+/*------------------------------------
+        Media queries
+--------------------------------------*/
+
+/*    Mobile device-*/
+@Media only screen and (max-width: 688px){
+    .conteiner{
+width: 100%;
+    }
+    .conteiner, .walmart{
+display: inline;
+align-items: center;
+    }
+    .Popular-Collection{
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+}
+
+/*    tablet device-*/
+
+@Media only screen and (min-width: 688px) and
+     (max-width: 992px){
+        .Popular-Collection{
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+     }
