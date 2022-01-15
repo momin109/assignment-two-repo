@@ -18,9 +18,7 @@ body{
 .product{
     width: 50%;
     margin-top: 50px;
-    margin-left : 80px;
-    
-    
+    margin-left : 80px;  
 }
 .product-details{
 width: 500px;
@@ -185,24 +183,74 @@ padding-right: 5px;
 /*    Mobile device-*/
 @Media only screen and (max-width: 688px){
     .conteiner{
-width: 100%;
+        width: 100%;
     }
     .conteiner, .walmart{
-display: inline;
-align-items: center;
+    display: inline;
+    margin: 10px;
     }
+
+     .product{
+    width: 50%;
+    margin-top: 10px;
+    margin-left : 3px;  
+    }
+    .product-details{
+    width: 350px;
+    margin-bottom: 20px;
+    }
+    .product{
+     width: 400px;
+    }
+   .camera img{
+    width: 300px;
+    padding-left: 40px;
+     }
+
     .Popular-Collection{
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
-}
-}
+    width: 100%;
+    width: 250px;
+    }
+    .slider{ 
+    width: 360px;
+    height: 300px; 
+    }
+    }
 
-/*    tablet device-*/
+            /*    tablet device-*/
 
-@Media only screen and (min-width: 688px) and
+    @Media only screen and (min-width: 688px) and
      (max-width: 992px){
         .Popular-Collection{
             grid-template-columns: repeat(2, 1fr);
             align-items: center;
         }
+        .conteiner{
+            width: 100%;
+        }
+        .conteiner, .walmart{
+        display: inline-block;
+        margin: 100px;
+        }
+    
+         .product{
+        width: 50%;
+        margin-top: 10px;
+        margin-left : 3px;  
+        }
+        .product-details{
+        width: 650px;
+        margin-bottom: 20px;
+        }
+        .product{
+         width: 700px;
+        }
+       .camera img{
+        width: 400px;
+        margin-left: 10px;
+        
+         }
      }
+     
